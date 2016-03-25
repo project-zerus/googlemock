@@ -10,6 +10,11 @@ cc_library(
   srcs = [
     'gmock-1.7.0/src/gmock-all.cc',
   ],
+  hdrs = glob([
+    'gmock-1.7.0/include/**/*.h',
+    'gmock-1.7.0/src/*.h',
+    'gmock-1.7.0/src/*.cc',
+  ]),
   deps = [
     "//external:gtest",
   ],
